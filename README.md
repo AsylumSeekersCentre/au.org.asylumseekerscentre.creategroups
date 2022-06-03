@@ -1,15 +1,18 @@
 # au.org.asylumseekerscentre.creategroups
 
-![Screenshot](/images/screenshot.png)
+This extension creates and deletes CiviCRM Groups for testing purposes.
 
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+WARNING! This extension is only intended for use in Development environments. Do not install on Production sites!
+--------
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
 ## Requirements
 
-* PHP v7.2+
-* CiviCRM (*FIXME: Version number*)
+This extension has been tested with the following software:
+
+* PHP v7.3
+* CiviCRM 5.49.4
 
 ## Installation (Web UI)
 
@@ -22,7 +25,7 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
 cd <extension-dir>
-cv dl au.org.asylumseekerscentre.creategroups@https://github.com/FIXME/au.org.asylumseekerscentre.creategroups/archive/master.zip
+cv dl au.org.asylumseekerscentre.creategroups@https://github.com/asylumseekerscentre/au.org.asylumseekerscentre.creategroups/archive/master.zip
 ```
 
 ## Installation (CLI, Git)
@@ -31,14 +34,13 @@ Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) 
 install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
-git clone https://github.com/FIXME/au.org.asylumseekerscentre.creategroups.git
+git clone https://github.com/asylumseekerscentre/au.org.asylumseekerscentre.creategroups.git
 cv en creategroups
 ```
 
 ## Getting Started
 
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
+Using the API Explorer (v3), you can call Group.createmany and Group.deletemany. Created groups will have a title beginning with "TestGroup" followed by a number. Deleted groups should be limited to those which begin with "TestGroup". Please ensure that you have a backup before creating or deleting groups with this extension.
 
-## Known Issues
+The purpose of this extension is to demonstrate an issue with large numbers of groups (~475+) on webform-civicrm forms.
 
-(* FIXME *)
