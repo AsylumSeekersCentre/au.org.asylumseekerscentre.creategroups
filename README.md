@@ -25,7 +25,7 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
 cd <extension-dir>
-cv dl au.org.asylumseekerscentre.creategroups@https://github.com/asylumseekerscentre/au.org.asylumseekerscentre.creategroups/archive/master.zip
+cv dl au.org.asylumseekerscentre.creategroups@https://github.com/asylumseekerscentre/au.org.asylumseekerscentre.creategroups/archive/main.zip
 ```
 
 ## Installation (CLI, Git)
